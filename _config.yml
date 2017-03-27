@@ -7,7 +7,7 @@ markdown: kramdown
 kramdown:
   syntax_highlighter: rouge
 
-name: 这个名字想了一晚上
+name: 这个名字想了一天
 description: 总要写些什么！
 url: https://zhuxiaoqiangcn.github.io/
 email: zhuxiaoqianghitwh@gmail.com
