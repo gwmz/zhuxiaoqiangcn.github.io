@@ -7,10 +7,10 @@ markdown: kramdown
 kramdown:
   syntax_highlighter: rouge
 
-name: 写代码的猴子
-description: 当猴子不写代码时,他在写些什么。
-url: http://jaeger.itscoder.com/
-email: chjie.jaeger@gmail.com
+name: zhuxiaoqiang
+description: 总要写些什么！
+url: https://zhuxiaoqiangcn.github.io/
+email: zhuxiaoqianghitwh@gmail.com
 
 defaults:
  -
@@ -43,4 +43,4 @@ navs:
 # ---------------- #
 github_id: zhuxiaoqiangcn
 weibo_id: xdmdhz
-zhihu_id: jaeger
+zhihu_id: GMOnePoint
