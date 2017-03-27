@@ -23,20 +23,20 @@ defaults:
 
 navs:
   -
+    href: /feed/
+    label: 订阅
+  -
     href: /about/
     label: 关于本站
   -
     href: /me/
     label: AboutMe
   -
-    href: /articles/
-    label: 归档
-  -
-    href: /feed/
-    label: 订阅
-  -
     href: /WebLab/
     label: 实验室
+  -
+    href: /articles/
+    label: 归档
 
 # ---------------- #
 #      Socials     #
