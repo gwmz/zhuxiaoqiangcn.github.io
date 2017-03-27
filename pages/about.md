@@ -1,5 +1,5 @@
 ---
-title: 关于本站
+title: 关于小站
 layout: post
 permalink: /about/
 dskey: zhuxiaoqiangcn.github.io-about.html
