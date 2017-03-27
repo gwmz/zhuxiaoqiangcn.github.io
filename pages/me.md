@@ -13,9 +13,8 @@ show_ad: false
      <br/>
 </center>
 
-我是写代码的XX。
-
 Google 粉。
+
 
 混迹于知乎，微博。
 
