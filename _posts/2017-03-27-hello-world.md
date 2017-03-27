@@ -1,4 +1,5 @@
 ---
+layout: post
 title: Hello
 categories: 2017
 excerpt: c 
