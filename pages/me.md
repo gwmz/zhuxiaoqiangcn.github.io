@@ -7,7 +7,7 @@ show_ad: false
 ---
 
 <center>
-     <img src="http://ac-qygvx1cc.clouddn.com/f0108b2596e9fdcb.jpg" class="avatar"/>
+     <img src="/assets/img/def/ic_monkey.jpg" class="avatar"/>
      <strong>Persist to the end</strong>
      <br/>
      <br/>

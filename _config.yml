@@ -32,9 +32,6 @@ navs:
     href: /me/
     label: AboutMe
   -
-    href: /WebLab/
-    label: 实验室
-  -
     href: /articles/
     label: 归档
 
