@@ -30,7 +30,7 @@ navs:
     label: 关于本站
   -
     href: /me/
-    label: AboutMe
+    label: 关于作者
   -
     href: /articles/
     label: 归档
