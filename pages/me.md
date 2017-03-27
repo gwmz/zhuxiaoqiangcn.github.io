@@ -21,7 +21,7 @@ Google 粉。
 
 可以通过以下方式找到我：
 
+- GitHub：[zhuxiaoqiangcn](https://github.com/zhuxiaoqiangcn)
 - 知乎：[GMOnePoint](https://www.zhihu.com/people/GMOnePoint)
-- 邮箱：[ZXQ](mailto:zhuxiaoqianghitwh@gmail.com)
-- GitHub：[ZXQ \(GMOnePoint\)](https://github.com/zhuxiaoqiangcn)
+- 邮箱：[XQ](mailto:zhuxiaoqianghitwh@gmail.com)
 
