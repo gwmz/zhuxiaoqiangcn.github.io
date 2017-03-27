@@ -27,10 +27,10 @@ navs:
     label: 订阅
   -
     href: /about/
-    label: 关于本站
+    label: 关于
   -
     href: /me/
-    label: 关于作者
+    label: 介绍
   -
     href: /articles/
     label: 归档
