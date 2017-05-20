@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Hello
-category: 2017年度
+title: C++指针详解
+category: 2017年度——C++
 
 ---
 
