@@ -57,26 +57,23 @@ category: C/C++
 
 ### 五、指针的算术运算
 指针可以加上或减去一个整数。<br/>
-指针的这种运算的意义和通常的数值的加减运算的意义是不一样的。<br/><br/>
+指针的这种运算的意义和通常的数值的加减运算的意义是不一样的。<br/>
 <一><br/>
 指针ptr的类型是int*,它指向的类型是int，它被初始化为指向整形变量a。<br/>
 指针ptr被加了1，编译器是这样处理的：它把指针ptr的值加上了sizeof(int)，在32位程序中，是被加上了4。<br/>
 由于地址是用字节做单位的，故ptr所指向的地址由原来的变量a的地址向高地址方向增加了4个字节。<br/>
 由于char类型的长度是一个字节，所以原来ptr是指向数组a的第0号单元开始的四个字节，此时指向了数组a中从第4号单元开始的四个字节。
-<pre>
-<code>
+<pre><code>
 	char a[20];  
 	int *ptr=a;  
 	...   
 	ptr++;  
-</code>
-</pre>
+</code></pre>
 
 <二><br/>
 我们可以用一个指针和一个循环来遍历一个数组。<br/>
 这个例子将整型数组中各个单元的值加1。由于每次循环都将指针ptr加1，所以每次循环都能访问数组的下一个单元。
-<pre>
-<code>
+<pre><code>
 	int array[20];  
 	int *ptr=array;  
 	...  
@@ -87,18 +84,17 @@ category: C/C++
 		(*ptr)++;  
 		ptr++；  
 	}   
-</code>
-</pre> 
+</code></pre> 
 
 <三><br/>
-在这个例子中，ptr被加上了5，
+在这个例子中，ptr被加上了5 <br/>
 **编译器是这样处理的：**将指针ptr的值加上5乘sizeof(int)，在32位程序中就是加上了5乘4=20。<br/>
 由于地址的单位是字节，故现在的ptr所指向的地址比起加5后的ptr所指向的地址来说，向高地址方向移动了20个字节。<br/>
 在这个例子中，没加5前的ptr指向数组a的第0号单元开始的四个字节，加5后，ptr已经指向了数组a的合法范围之外了。<br/>
 虽然这种情况在应用上会出问题，但在语法上却是可以的，这也体现出了指针的灵活性。<br/>
 如果，ptr是被减去5，那么处理过程大同小异，只不过ptr的值是被减去5乘sizeof(int)，新的ptr指向的地址将比原来的ptr所指向的地址向低地址方向移动了20个字节。<br/>
 **总结一下**<br/>
-一个指针ptrold加上一个整数n后，结果是一个新的指针ptrnew，ptrnew的类型和ptrold的类型相同，ptrnew所指向的类型和ptrold所指向的类型也相同。ptrnew的值将比ptrold的值增加了n乘sizeof(ptrold所指向的类型)个字节。就是说，ptrnew所指向的内存区将比ptrold所指向的内存区向高地址方向移动了n乘sizeof(ptrold所指向的类型)个字节。一个指针ptrold减去一个整数n后，结果是一个新的指针ptrnew，ptrnew的类型和ptrold的类型相同，ptrnew所指向的类型和ptrold所指向的类型也相同。ptrnew的值将比ptrold的值减少了n乘sizeof(ptrold所指向的类型)个字节，就是说，ptrnew所指向的内存区将比ptrold所指向的内存区向低地址方向移动了n乘sizeof(ptrold所指向的类型)个字节。
+一个指针ptrold加上一个整数n后，结果是一个新的指针ptrnew，ptrnew的类型和ptrold的类型相同，ptrnew所指向的类型和ptrold所指向的类型也相同。ptrnew的值将比ptrold的值增加了n乘sizeof(ptrold所指向的类型)个字节。就是说，ptrnew所指向的内存区将比ptrold所指向的内存区向高地址方向移动了n乘sizeof(ptrold所指向的类型)个字节。一个指针ptrold减去一个整数n后，结果是一个新的指针ptrnew，ptrnew的类型和ptrold的类型相同，ptrnew所指向的类型和ptrold所指向的类型也相同。ptrnew的值将比ptrold的值减少了n乘sizeof(ptrold所指向的类型)个字节，就是说，ptrnew所指向的内存区将比ptrold所指向的内存区向低地址方向移动了n乘sizeof(ptrold所指向的类型)个字节。<br/>
 <pre><code>
 	char a[20];  
 	int *ptr = a;  
@@ -107,7 +103,7 @@ category: C/C++
 	ptr += 5; 
 </code></pre>
 
-## 六、运算符&和*
+### 六、运算符&和*
 这里&是取地址运算符，*是间接运算符。<br/>
 &a的运算结果是一个指针，指针的类型是a的类型加个*，指针所指向的类型是a的类型，指针所指向的地址嘛，那就是a的地址。<br/>
 *p的结果是p所指向的东西，这个东西有这些特点：它的类型是p指向的类型，它所占用的地址是p所指向的地址。
