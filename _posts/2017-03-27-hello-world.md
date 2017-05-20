@@ -10,7 +10,7 @@ category: C/C++
 
 
 ### 指针的概念
-指针是一个特殊的**变量**，它里面存储的值被解释成为内存里的一个地址。要搞清一个指针需要搞清指针的四方面的内容：**指针的类型**，**指针所指向的类型**，**指针的值或者叫指针所指向的内存区**，**还有指针本身所占据的内存区**。 	
+指针是一个特殊的**变量**，它里面存储的值被解释成为内存里的一个地址。要搞清一个指针需要搞清指针的四方面的内容：**指针的类型**，**还有指针本身所占据的内存区**，**指针的值或者叫指针所指向的内存区**，**指针所指向的类型**。 	
 
 ### 一、指针的类型
 从语法的角度看，你只要把指针声明语句里的**指针名字去掉**，剩下的部分就是这个指针本身所具有的类型。
@@ -91,7 +91,7 @@ category: C/C++
 如果，ptr是被减去5，那么处理过程大同小异，只不过ptr的值是被减去5乘sizeof(int)，新的ptr指向的地址将比原来的ptr所指向的地址向低地址方向移动了20个字节。 
 
 **总结一下**
-一个指针ptrold加上一个整数n后，结果是一个新的指针ptrnew，ptrnew的类型和ptrold的类型相同，ptrnew所指向的类型和ptrold所指向的类型也相同。ptrnew的值将比ptrold的值增加了n乘sizeof(ptrold所指向的类型)个字节。就是说，ptrnew所指向的内存区将比ptrold所指向的内存区向高地址方向移动了n乘sizeof(ptrold所指向的类型)个字节。一个指针ptrold减去一个整数n后，结果是一个新的指针ptrnew，ptrnew的类型和ptrold的类型相同，ptrnew所指向的类型和ptrold所指向的类型也相同。ptrnew的值将比ptrold的值减少了n乘sizeof(ptrold所指向的类型)个字节，就是说，ptrnew所指向的内存区将比ptrold所指向的内存区向低地址方向移动了n乘sizeof(ptrold所指向的类型)个字节。 
+<font color=Pink size=5 face="黑体">一个指针ptrold加上一个整数n后，结果是一个新的指针ptrnew，ptrnew的类型和ptrold的类型相同，ptrnew所指向的类型和ptrold所指向的类型也相同。ptrnew的值将比ptrold的值增加了n乘sizeof(ptrold所指向的类型)个字节。就是说，ptrnew所指向的内存区将比ptrold所指向的内存区向高地址方向移动了n乘sizeof(ptrold所指向的类型)个字节。一个指针ptrold减去一个整数n后，结果是一个新的指针ptrnew，ptrnew的类型和ptrold的类型相同，ptrnew所指向的类型和ptrold所指向的类型也相同。ptrnew的值将比ptrold的值减少了n乘sizeof(ptrold所指向的类型)个字节，就是说，ptrnew所指向的内存区将比ptrold所指向的内存区向低地址方向移动了n乘sizeof(ptrold所指向的类型)个字节。 </font>
 <pre><code>
 	char a[20];  
 	int *ptr = a;  
